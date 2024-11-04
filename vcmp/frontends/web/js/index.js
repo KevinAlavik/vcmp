@@ -29,7 +29,6 @@ function parseData(data) {
     try {
         const pdata = JSON.parse(data);  // Parse JSON data
         console.log("Message from server:", data);
-        console.log(pdata.username)
 
         if (!pdata.event) {
             console.error("Data is not found in the Message!");
